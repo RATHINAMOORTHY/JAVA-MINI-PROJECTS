@@ -1,0 +1,91 @@
+
+WATER CONSUMPTION BILLING
+SYSTEM 
+
+Business Problem :
+A Gated Community housing Facility in Chennai called “The Feathers Housing Community” with more than 500
+houses is the scope of business problem here. Due to acute shortage of Water
+in the city, such big housing communities cannot depend on metro water alone
+for their day to day water needs. So they have decided to build a common water
+tank, which will be filled regularly and water will be supplied to each house through
+a metered connection. The community management has
+decided to appoint a person to note the meter reading placed in each house and
+receipt for amount based upon quantity of water consumed will be handed to
+respective house owners. This system failed due to
+unavailability of house owners during most of time when the appointed person
+visits respective house to give receipt & collect money. To overcome this
+painful process, management decides to go online. Design a software application
+with following functionalities and screens, 
+
+(i)
+Home Page / Login Screen 
+
+
+a.    
+Logo 
+
+
+b.   
+Login (Admin /
+User) 
+
+
+c.    
+Password 
+
+
+(ii)
+Consumption Details - Update Screen for Admin 
+
+
+[1]  House Number 
+
+
+[2]  House Owner Name 
+
+
+[3]  Water Consumption Reading - 
+
+
+a)
+Initial Reading (in Litre) 
+
+
+b)
+End Reading (in Litre) 
+
+
+c)
+Total Consumption for the Month (in Litre) 
+
+
+[1]  Current Cost / Litre 
+
+
+[2]  Bill Amount 
+
+
+(iii)
+Consumption Details - View Screen for Users 
+
+
+(iv)
+Invoice 
+
+
+[1]  House Number 
+
+
+[2]  Owner Name 
+
+
+[3]  Total Reading 
+
+
+[4]  Monthly Consumption Charge 
+
+---------------------------------------
+create table water(hnum number(6) NOT NULL UNIQUE,hname varchar(25) NOT NULL,                              photo blob NOT NULL,ir number(6) NOT NULL,er number(6) NOT NULL,                              cost number(5) NOT NULL,con number(6) NOT NULL);
+ 
+
+
