@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head >
+<meta charset="ISO-8859-1">
+<title>ADMIN PANEL</title>
+<script type="text/javascript">
+function isValid(myNode1,myNode2){
+var password = myNode1.value;
+var username = myNode2.value;
+if (password == "admin123" && username=="admin123")
+{
+document.write('<img src="src/fet.png" height="150" width="150"><img src="src/logo.png" height="150" width="1000"><br><h1>WATER CONSUMPTION BILLING SYSTEM</h1><br/><a href="index.html"><img src="src/home.png" height="70" width="70"></a>');
+document.write('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html"><img src="src/logout.png" height="70" width="70"></a><br/><br>')
+document.write('<a href="add.html">ADD CONSUMER:<img src="src/user_add.png" height="150" width="150"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
+document.write('<a href="update.html">UPDATE DETAILS:<img src="src/user_edit.png" height="150" width="150"></a>');
+}
+else
+{alert('Wrong Password')}
+}
+</script>
+</head>
+<body bgcolor="#90EE90">
+<img src="src/fet.png" height="150" width="150"><img src="src/logo.png" height="150" width="1000"><br>
+<h1>WATER CONSUMPTION BILLING SYSTEM</h1><br/><br>
+<a href="index.html"><img src="src/home.png" height="70" width="70"></a>
+<form name="PasswordField" action="">
+<h2>PLEASE ENTER THE ADMIN CREDENTIALS</h2><br/>
+Username:<input type="text" id="username" name="username"><br/><br>
+Password:<input type="password" id="password" name="password"><br/><br>
+<input type="button" value="Log in" onclick="isValid(username,password);">
+</form>
+</body>
+</html>
